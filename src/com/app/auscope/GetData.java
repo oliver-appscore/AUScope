@@ -24,6 +24,8 @@ public class GetData implements XMLUtilityInterfaces
 		final String TOTAL_NUMBER_OF_CHANNELS = "TotalNumberChannels";
 		final String SELECTED_NUMBER_OF_CHANNELS = "SelectedNumberChannels";
 		
+		
+		 
 		ArrayList<HashMap<String, String>> Stations = new ArrayList<HashMap<String, String>>();
 		
 		String XML = XMLUtility.getXmlFromUrl(AUSIS_STATIONS_URL, this);
