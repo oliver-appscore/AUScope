@@ -7,12 +7,14 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-public class GetData 
+import com.app.auscope.XMLUtility.XMLUtilityInterfaces;
+
+public class GetData implements XMLUtilityInterfaces
 {
 	public static final String 
 		AUSIS_STATIONS_URL = "http://service.iris.edu/fdsnws/station/1/query?net=S&sta=AU*&loc=--&cha=*&level=station&format=xml&nodata=404#";
 	
-	public static void getAusisStations()
+	public void getAusisStations()
 	{
 		final String KEY_ITEM = "Station";
 		final String LATITURE = "Latitude";
@@ -24,7 +26,7 @@ public class GetData
 		
 		ArrayList<HashMap<String, String>> Stations = new ArrayList<HashMap<String, String>>();
 		
-		String XML = XMLUtility.getXmlFromUrl(AUSIS_STATIONS_URL);
+		String XML = XMLUtility.getXmlFromUrl(AUSIS_STATIONS_URL, this);
 		Document doc = XMLUtility.getDomElement(XML);
 		
 		NodeList nl = doc.getElementsByTagName(KEY_ITEM);
@@ -47,7 +49,13 @@ public class GetData
         }
 		
 		Fn.Out(Stations);
-		
-		
 	}
+
+	@Override
+	public void onXMLRequestComplete(String XML) 
+	{
+		Fn.Out(XML);
+	}
+	
+	
 }
