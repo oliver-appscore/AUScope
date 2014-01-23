@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seismometer_submenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:background="@drawable/btn_nav_panel_tier2" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight=".5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/gnss_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imageContent_gnss"
+                android:src="@drawable/icon_nav2_gnss_idle" 
+                />
+
+            <TextView
+                android:id="@+id/gnss_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/imageContent_gnss"
+                android:textColor="#5D6468" 
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical" 
+            >
+
+            <ImageView
+                android:id="@+id/ausis_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/imageContent_ausis"
+                android:src="@drawable/icon_nav2_ausis_idle" />
+
+            <TextView
+                android:id="@+id/ausis_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/imageContent_ausis"
+                android:textColor="#5D6468" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight=".5" />
+        
+    </LinearLayout>
+</RelativeLayout>

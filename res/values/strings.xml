@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AUScope</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- App wide Strings -->
+    <string name="image_description_app_logo">App Logo</string>
+    <string name="default_view">Default View</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Settings">Settings</string>
+    
+    <!-- Map Strings -->
+    <string name="Current_location">Current Location</string>
+    <string name="GPSAlertDialogTitle">GPS</string>
+    <string name="GPSAlertDialogMessage">GPS</string>  
+    <string name="unable_to_create_maps">Sorry, unable to create maps.</string> 
+    
+    <!-- Image contents -->
+    <string name="imageContent_refresh">Refresh</string>
+    <string name="imageContent_seismometers">Seismometers</string>
+    <string name="imageContent_mapLayers">Map Layers</string>
+    <string name="imageContent_info">Info</string>
+    
+    <string name="Current_Location">Current Location</string>
+    <string name="Current_Date">Current Date</string>
+    
+    	<!-- Submenu Seismometer Strings -->
+    	<string name="imageContent_ausis">Ausis</string>
+    	<string name="imageContent_gnss">Gnss</string>
+		
+    	
+    	
+</resources>
